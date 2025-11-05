@@ -1,0 +1,290 @@
+/*
+   ===========================================
+   GENERAL STYLES & CSS RESET
+   ===========================================
+
+   This file contains:
+   - CSS reset for consistent cross-browser rendering
+   - Root CSS variables for easy theme customization
+   - Base HTML element styling
+   - Custom scrollbar styling
+   - Font imports
+
+   These styles apply globally across the entire site
+*/
+
+/* ===========================================
+   FONT IMPORTS
+   =========================================== */
+
+/*
+   Import Montserrat font family from Google Fonts
+   Weights: 300 (Light), 400 (Regular), 500 (Medium), 600 (Semi-bold), 700 (Bold)
+   Used for: Navigation, body text, headings (non-script)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*
+   Import custom fonts (Snell Roundhand)
+   Defined in fonts.css - used for logo and script headings
+*/
+@import url(fonts.css);
+
+/* ===========================================
+   CSS RESET
+   =========================================== */
+
+/*
+   Universal selector (*) resets all elements
+   Includes pseudo-elements (::before, ::after)
+
+   Purpose:
+   - Remove default browser margins and padding
+   - Use border-box sizing (padding/border included in width)
+   - Remove default list styles
+   - Remove default text decoration (underlines on links)
+*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    /* Remove all default margins */
+    padding: 0;
+    /* Remove all default padding */
+    box-sizing: border-box;
+    /* Include padding/border in element width */
+    list-style-type: none;
+    /* Remove bullet points from lists */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
+
+/* ===========================================
+   ROOT VARIABLES
+   =========================================== */
+
+/*
+   CSS Custom Properties (Variables)
+   Define once, use throughout the site
+   Easy to update theme colors from one location
+*/
+:root {
+    /* Pure black background for maximum contrast and elegance */
+    --primary-bg-color: #000000;
+
+    /* Custom signature font for logo and elegant headings */
+    --logo-font: "Snell Roundhand", cursive;
+
+    /* Pure white for text and accents */
+    --white: #ffffff;
+
+    /* Semi-transparent white for secondary text */
+    --white-dimmed: rgba(255, 255, 255, 0.7);
+}
+
+/* ===========================================
+   HTML BASE STYLES
+   =========================================== */
+
+/*
+   Root HTML element styling
+
+   font-size: 62.5% converts default 16px to 10px
+   This makes rem units easier to calculate:
+   - 1rem = 10px
+   - 1.6rem = 16px
+   - 2rem = 20px
+
+   This technique provides:
+   - Easy mental math for sizing
+   - Respects user's browser font size preferences
+   - Better accessibility than fixed px values
+*/
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px for easy calculations */
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    /* Smooth scrolling for anchor links */
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/*
+   Zoom adjustments for large displays
+   Scales up entire site proportionally
+   Maintains design integrity on ultra-wide monitors
+*/
+
+/* Large desktop screens (1440px and up) */
+@media (min-width: 1440px) {
+    html {
+        zoom: 1.5;
+        /* Scale up by 50% */
+    }
+}
+
+/* 2K displays (2560px and up) */
+@media (min-width: 2560px) {
+    html {
+        zoom: 1.7;
+        /* Scale up by 70% */
+    }
+}
+
+/* 4K displays (3860px and up) */
+@media (min-width: 3860px) {
+    html {
+        zoom: 2.5;
+        /* Scale up by 150% */
+    }
+}
+
+/* ===========================================
+   BODY STYLES
+   =========================================== */
+
+/*
+   Body element - wraps all visible content
+   Sets default background and prevents overflow
+*/
+body {
+    background-color: var(--primary-bg-color);
+    /* Pure black background */
+    font-size: 1.6rem;
+    /* Default text size (16px) */
+    color: var(--white);
+    /* Default white text */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    line-height: 1.6;
+    /* Comfortable line spacing */
+}
+
+/* ===========================================
+   CUSTOM SCROLLBAR
+   =========================================== */
+
+/*
+   Custom scrollbar styling (Webkit browsers: Chrome, Safari, Edge)
+   Creates a sleek, minimal scrollbar that matches our black/white theme
+
+   Note: Firefox uses different properties (not included here)
+*/
+
+/*
+   Scrollbar track (the background groove)
+   Dark gray to blend with black background
+*/
+::-webkit-scrollbar {
+    width: 1.2rem;
+    /* Width of vertical scrollbar */
+    height: 1.2rem;
+    /* Height of horizontal scrollbar */
+}
+
+/*
+   Scrollbar thumb (the draggable element)
+   Light gray that contrasts with dark track
+   Rounded for modern aesthetic
+*/
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    /* Fully rounded ends */
+    background: #444444;
+    /* Medium gray */
+    transition: all 0.3s ease;
+    /* Smooth color transitions */
+}
+
+/*
+   Scrollbar thumb hover state
+   Brightens to white for clear visual feedback
+*/
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+    /* Pure white on hover */
+}
+
+/*
+   Scrollbar track background
+   Very dark gray, almost black
+*/
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+    /* Near-black */
+}
+
+/* ===========================================
+   SMOOTH SCROLLING
+   =========================================== */
+
+/*
+   Smooth scroll behavior for all elements
+   Applies to anchor link navigation and programmatic scrolling
+   Creates elegant, animated page transitions
+*/
+* {
+    scroll-behavior: smooth;
+}
+
+/* ===========================================
+   SELECTION STYLING
+   =========================================== */
+
+/*
+   Custom text selection colors
+   When user highlights text, show inverted colors
+   Maintains brand aesthetic even in selection
+*/
+::selection {
+    background: #ffffff;
+    /* White background */
+    color: #000000;
+    /* Black text */
+}
+
+/* Firefox-specific selection styling */
+::-moz-selection {
+    background: #ffffff;
+    /* White background */
+    color: #000000;
+    /* Black text */
+}
+
+/* ===========================================
+   ACCESSIBILITY IMPROVEMENTS
+   =========================================== */
+
+/*
+   Focus indicators for keyboard navigation
+   Essential for accessibility compliance
+   Shows clear outline when tabbing through elements
+*/
+*:focus-visible {
+    outline: 2px solid #ffffff;
+    /* White outline */
+    outline-offset: 3px;
+    /* Space between element and outline */
+}
+
+/*
+   Reduce motion for users who prefer it
+   Respects system-level accessibility settings
+   Disables animations for users with vestibular disorders
+*/
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        /* Effectively disable animations */
+        animation-iteration-count: 1 !important;
+        /* Run once only */
+        transition-duration: 0.01ms !important;
+        /* Effectively disable transitions */
+        scroll-behavior: auto !important;
+        /* Disable smooth scrolling */
+    }
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKR Manuel - Official Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/general.css"> <!-- Base: resets, variables, scrollbar -->
+    <link rel="stylesheet" href="styles/navigation.css"> <!-- Navigation bar -->
+    <link rel="stylesheet" href="styles/hero.css"> <!-- Hero/landing section -->
+    <link rel="stylesheet" href="styles/about.css"> <!-- About/story section -->
+    <link rel="stylesheet" href="styles/carousel.css"> <!-- Music carousel -->
+    <link rel="stylesheet" href="styles/contact.css"> <!-- Contact form -->
+    <link rel="stylesheet" href="styles/footer.css"> <!-- Footer -->
+    <link rel="stylesheet" href="styles/responsive.css"> <!-- Mobile/tablet responsive -->
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <nav class="navbar">
+        <a href="#music-carousel" class="nav-item">Music</a>
+        <h1 class="logo">HKR Manuel</h1>
+        <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+
+    <!--HERO SECTION-->
+    <section class="hero-section">
+        <!-- Animated background gradient -->
+        <div class="hero-bg-animation"></div>
+
+        <!-- Main hero content -->
+        <div class="hero-content">
+            <div class="hero-label animate-fade-in">
+                <span class="label-dot"></span>
+                NEW EP OUT NOW
+            </div>
+            <h1 class="hero-title animate-fade-in-up">HKR Manuel</h1>
+            <p class="hero-subtitle animate-fade-in-up delay-1">
+                Crafting Stories Through Sound · Breaking Boundaries · Redefining Afrobeats
+            </p>
+
+            <!--  ep showcase -->
+            <div class="hero-featured animate-fade-in-up delay-2">
+                <div class="featured-album-cover">
+                    <img src="assets/album-art/have-you-seen-this-man.jpg" alt="Have You Seen This Man?"
+                        class="featured-img">
+                    <div class="play-pulse"></div>
+                </div>
+                <div class="featured-info">
+                    <h3 class="featured-label">LATEST EP</h3>
+                    <h2 class="featured-title">Have You Seen This Man?</h2>
+                    <p class="featured-meta">5 Tracks · 2024-2025 · HKR Productions</p>
+                    <div class="featured-actions">
+                        <a href="https://open.spotify.com/album/356x0LmPpt5BAvlZdMjoCI?si=JN45IGWiTiOpyRwcECaCPw"
+                            class="btn-primary" target="_blank">
+                            <ion-icon name="play"></ion-icon>
+                            Play on Spotify
+                        </a>
+                        <a href="#music-carousel" class="btn-secondary">
+                            View All Tracks
+                            <ion-icon name="arrow-down"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats/Social Proof-->
+            <div class="hero-stats animate-fade-in-up delay-3">
+                <div class="stat-item">
+                    <div class="stat-number">2.6K</div>
+                    <div class="stat-label">Total Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">52K</div>
+                    <div class="stat-label">Total Streams</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">770K</div>
+                    <div class="stat-label">Playlist Reach</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-wrapper">
+                <!-- Left: Large artist image -->
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="assets/album-art/palmwine.png" alt="HKR Manuel" class="artist-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Story and achievements -->
+                <div class="about-content">
+                    <h3 class="section-subheading">— About —</h3>
+                    <h2 class="about-title">Redefining African Sound</h2>
+
+                    <p class="about-text">
+                        HKR Manuel is more than just an artist—he's a storyteller, a cultural bridge,
+                        and a sonic architect reshaping the landscape of modern Afrobeats. Born in Ghana
+                        and raised on a diverse palette of sounds, Manuel crafts music that transcends
+                        borders and speaks to the soul.
+                    </p>
+
+                    <p class="about-text">
+                        From the intimate confessions of "Palmwine" to the hard-hitting honesty of
+                        "She Don't Fuck Around," each track is a journey through raw emotion, cultural
+                        pride, and unapologetic authenticity. His debut album "Have You Seen This Man?"
+                        has captivated audiences worldwide, earning critical acclaim and millions of streams.
+                    </p>
+
+                    <!-- Key highlights -->
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <ion-icon name="musical-notes"></ion-icon>
+                            <div>
+                                <h4>9 Songs Released</h4>
+                                <p>Building a powerful discography</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <ion-icon name="people"></ion-icon>
+                            <div>
+                                <h4>Growing Fanbase</h4>
+                                <p>2.6K+ dedicated followers worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Press quote - REAL -->
+                    <blockquote class="press-quote">
+                        <div class="quote-icon">"</div>
+                        <p>
+                            "Palmwine" is more than just a song; it's a testament to artistic
+                            resilience and the transformative power of a challenge. This soulful
+                            Afro-Fusion track captures that sweet, heady rush where love feels
+                            like a powerful, delightful drug.
+                        </p>
+                        <cite>— epicpulse</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--MUSIC CAROUSEL SECTION-->
+    <section id="music-carousel" class="music-section">
+        <div class="container">
+            <h3 class="text-center section-subheading">— Discography —</h3>
+            <h1 class="text-center section-heading">Latest Releases</h1>
+
+            <div class="swiper music-slider">
+                <div class="swiper-wrapper">
+
+                    <!-- She Don't Fuck Around -->
+                    <a href="https://open.spotify.com/track/7yaJyXERKd9D8k38i5zN77" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/have-you-seen-this-man.jpg" alt="She Don't Fuck Around"
+                                class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">She Don't Fuck Around</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Have You Seen This Man?</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:36
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Omoke Dance -->
+                    <a href="https://open.spotify.com/track/3AJcqZ7cNKzr6JCOxtR79U" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/have-you-seen-this-man.jpg" alt="Omoke Dance"
+                                class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Omoke Dance</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Omoke Dance</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:10
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Jan.9th.1985 -->
+                    <a href="https://open.spotify.com/track/0NPCZgO1HXvOSs8012O1LK" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/jan-9th-1985.jpeg" alt="Jan.9th.1985" class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Jan.9th.1985</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Jan.9th.1985</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:10
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Palmwine -->
+                    <a href="https://open.spotify.com/track/3MXeX8gL0WxCMghOQtsja3" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/palmwine.png" alt="Palmwine" class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Palmwine</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Palmwine</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    3:30
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Comment tu t'appelle -->
+                    <a href="https://open.spotify.com/track/7jHdI44mjTyGtF9WaTFG0e" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/comment-tu-tappelle.jpeg" alt="Comment tu t'appelle"
+                                class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Comment tu t'appelle</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Comment tu t'appelle</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:51
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2024
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Have You Seen This Man? -->
+                    <a href="https://open.spotify.com/track/7dAtkT9PPV8iZfLXcmfLcc" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/have-you-seen-this-man.jpg" alt="Have You Seen This Man?"
+                                class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Have You Seen This Man?</h3>
+                            </div>
+                            <p class="track-album">Have You Seen This Man?</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    1:50
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Red Flags -->
+                    <a href="https://open.spotify.com/track/5YV24PoIqOgTSLEaFJ4fPU" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/red-flags.jpeg" alt="Red Flags" class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Red Flags</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Have You Seen This Man?</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:58
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Akweley -->
+                    <a href="https://open.spotify.com/track/4C94B3PZ2jXQKfPmAZ4rU0" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/akweley.jpeg" alt="Akweley" class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Akweley</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Have You Seen This Man?</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    2:59
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Slips & Slides -->
+                    <a href="https://open.spotify.com/track/5RUVInKOJZdwhmZvlXC4sF" target="_blank"
+                        rel="noopener noreferrer" class="swiper-slide track-card">
+                        <div class="track-artwork">
+                            <img src="assets/album-art/slips-and-slides.jpeg" alt="Slips & Slides" class="artwork-img">
+                            <div class="artwork-overlay">
+                                <div class="play-button">
+                                    <ion-icon name="play"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="vinyl-shine"></div>
+                        </div>
+                        <div class="track-info">
+                            <div class="track-header">
+                                <h3 class="track-title">Slips & Slides</h3>
+                                <span class="explicit-tag">E</span>
+                            </div>
+                            <p class="track-album">Have You Seen This Man?</p>
+                            <div class="track-meta">
+                                <span class="meta-item">
+                                    <ion-icon name="time-outline"></ion-icon>
+                                    3:24
+                                </span>
+                                <span class="meta-item">
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                    2025
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="music-navigation">
+                    <div class="nav-button nav-prev">
+                        <ion-icon name="chevron-back"></ion-icon>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="nav-button nav-next">
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h3 class="text-center section-subheading">— Get In Touch —</h3>
+            <h1 class="text-center section-heading">Let's Connect</h1>
+
+            <!-- Centered contact info only -->
+            <div class="contact-info-centered">
+                <p class="contact-info-text">
+                    Whether you're interested in collaborations, bookings, or just want to say hi,
+                    I'd love to hear from you.
+                </p>
+
+                <!-- Email -->
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Email</h4>
+                        <a href="mailto:contact@hkrmanuel.com" class="contact-link">
+                            contact@hkrmanuel.com
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-detail">
+                    <div class="contact-detail-icon">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Based In</h4>
+                        <p>Accra, Ghana</p>
+                    </div>
+                </div>
+
+                <!-- Social Media -->
+                <div class="contact-social">
+                    <h4>Follow Me</h4>
+                    <div class="contact-social-links">
+                        <a href="#" class="contact-social-link" aria-label="Spotify" target="_blank">
+                            <ion-icon name="logo-spotify"></ion-icon>
+                        </a>
+                        <a href="#" class="contact-social-link" aria-label="Instagram" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="contact-social-link" aria-label="Twitter" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" class="contact-social-link" aria-label="YouTube" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--FOOTER SECTION-->
+    <footer class="site-footer">
+        <div class="container">
+            <p class="footer-text">© 2024 HKR Manuel. All rights reserved.</p>
+            <!-- Placeholder for future social media links -->
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Spotify">
+                    <ion-icon name="logo-spotify"></ion-icon>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--EXTERNAL SCRIPTS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+
+</html>

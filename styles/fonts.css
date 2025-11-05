@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Snell Roundhand";
+    src: url(../fonts/SnellBT-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Snell Roundhand";
+    src: url(../fonts/SnellBT-Bold.otf);
+    font-weight: bold;
+}
