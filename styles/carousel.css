@@ -35,7 +35,6 @@
 
 .music-section {
     background: #000000;
-    padding: 12rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -224,9 +223,6 @@
 .nav-button {
     width: 5.5rem;
     height: 5.5rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -237,9 +233,7 @@
 }
 
 .nav-button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .nav-button ion-icon {
